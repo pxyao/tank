@@ -23,6 +23,7 @@ public class Login extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField textField;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -60,12 +61,12 @@ public class Login extends JDialog {
 		}
 		{
 			JLabel lblNewLabel_1 = new JLabel("\u540D\u5B57");
-			lblNewLabel_1.setBounds(53, 68, 52, 18);
+			lblNewLabel_1.setBounds(47, 52, 52, 18);
 			contentPanel.add(lblNewLabel_1);
 		}
 		{
 			textField = new JTextField();
-			textField.setBounds(118, 65, 164, 24);
+			textField.setBounds(112, 49, 164, 24);
 			contentPanel.add(textField);
 			textField.setColumns(10);
 		}
@@ -86,6 +87,16 @@ public class Login extends JDialog {
 			btnNewButton.setBounds(128, 109, 113, 27);
 			contentPanel.add(btnNewButton);
 		}
+		
+		JLabel lbip = new JLabel("IP\u5730\u5740");
+		lbip.setBounds(47, 83, 52, 18);
+		contentPanel.add(lbip);
+		{
+			textField_1 = new JTextField();
+			textField_1.setText("192.168.1.1");
+			textField_1.setBounds(112, 80, 164, 24);
+			contentPanel.add(textField_1);
+			textField_1.setColumns(10);
+		}
 	}
-
 }
